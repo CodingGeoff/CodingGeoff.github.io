@@ -73,9 +73,9 @@ protect_file_list = ('favicon.ico', 'index.html', 'musics.json', 'musiccovers')
 for files in os.walk(copy_target):
     files = files[2]; break
 
-for rm_file in files:
-    if rm_file not in protect_file_list:
-        os.remove(os.path.join(copy_target, rm_file))
+# for rm_file in files:
+#     if rm_file not in protect_file_list:
+#         os.remove(os.path.join(copy_target, rm_file))
 
 # copy
 root_struct = []
